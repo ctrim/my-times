@@ -1,0 +1,36 @@
+.header h1 {
+	color: mediumaquamarine;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.nav a{
+	display: inline-block;
+	color: black;
+	padding: 20px 10px;
+}
+
+.nav,
+.header h1 {
+	font-family: verdana;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.col-large {
+	display: flex;
+	flex-direction: column;
+	width: 630px;
+}
+
+.sub-large {
+	display: flex;
+}
