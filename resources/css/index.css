@@ -34,3 +34,13 @@
 .sub-large {
 	display: flex;
 }
+
+.col-medium {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+.content {
+	display: flex;
+}
