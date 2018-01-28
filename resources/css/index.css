@@ -33,6 +33,8 @@
 
 .sub-large {
 	display: flex;
+	justify-content: space-between;
+	width: 630px;
 }
 
 .col-medium {
@@ -43,10 +45,54 @@
 
 .content {
 	display: flex;
+	justify-content: space-between;
 }
 
 .col-small {
 	display: flex;
 	flex-direction: column;
 	width: 240px;
+}
+
+.img {
+	display: flex;
+	height: 300px;
+	font-family: georgia;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	align-items: center;
+}
+
+.head-story .img {
+	background-image: url("./images/main.png")
+}
+
+.ocat .img {
+	background-image: url("./images/fall-season.png");
+}
+
+.bcam .img {
+	background-image: url("./images/hipster.png");
+}
+
+.col-medium .img {
+	background-image: url("./images/cat-ceo.png");
+}
+
+.narr {
+	font-family: georgia;
+	font-size: 17px;
+	color: black;
+}
+
+.pictext {
+	font-size: 40px;
+	text-align: left;
+}
+
+.ocat,
+.bcam {
+	width: 300px;
 }
