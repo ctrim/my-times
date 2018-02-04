@@ -1,10 +1,14 @@
-.header h1 {
-	color: mediumaquamarine;
-}
-
+/*header*/
 .header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 3px;
+	border-bottom: 1px solid black;
+	position: fixed;
+	z-index: 2;
+	background-color: white;
+	width: 100%;
 }
 
 .logo {
@@ -12,87 +16,90 @@
 	align-items: center;
 }
 
-.nav a{
-	display: inline-block;
+.nav span a {
+	margin: 10px;
 	color: black;
-	padding: 20px 10px;
+}
+
+.logo span {
+	color:mediumaquamarine;
 }
 
 .nav,
-.header h1 {
+.logo {
 	font-family: verdana;
 	font-size: 14px;
 	font-weight: bold;
 }
 
-.col-large {
-	display: flex;
-	flex-direction: column;
-	width: 630px;
-}
+/*entire page*/
 
-.sub-large {
+.page {
 	display: flex;
-	justify-content: space-between;
-	width: 630px;
-}
-
-.col-medium {
-	display: flex;
-	flex-direction: column;
-	width: 300px;
-}
-
-.content {
-	display: flex;
-	justify-content: space-between;
-}
-
-.col-small {
-	display: flex;
-	flex-direction: column;
-	width: 240px;
+	position: relative;
+	top: 60px;
 }
 
 .img {
-	display: flex;
 	height: 300px;
+}
+
+.img span {
 	font-family: georgia;
 	font-weight: bold;
 	font-size: 30px;
 	color: white;
-	text-align: center;
-	align-items: center;
 }
 
-.head-story .img {
+/*first column*/
+.lgcol {
+	display: flex;
+	flex-direction: column;
+	width: 630px;
+	margin: 10px;
+}
+
+.bottom {
+	display: flex;
+}
+
+.orca,
+.burger {
+	margin: 15px;
+}
+
+.phish .img {
 	background-image: url("./images/main.png")
 }
 
-.ocat .img {
-	background-image: url("./images/fall-season.png");
-}
-
-.bcam .img {
-	background-image: url("./images/hipster.png");
-}
-
-.col-medium .img {
-	background-image: url("./images/cat-ceo.png");
-}
-
-.narr {
-	font-family: georgia;
-	font-size: 17px;
-	color: black;
-}
-
-.pictext {
+.phish .img span {
 	font-size: 40px;
-	text-align: left;
 }
 
-.ocat,
-.bcam {
+.orca .img {
+	background-image: url("./images/fall-season.png")
+}
+
+.burgers .img {
+	background-image: url("./images/hipster.png")
+}
+
+/*second column*/
+.medcol {
+	display: flex;
+	flex-direction: column;
 	width: 300px;
+	margin: 10px;
+}
+
+.cat .img {
+	background-image: url("./images/cat-ceo.png")
+}
+
+/*third column*/
+.smlcol {
+	display: flex;
+	flex-direction: column;
+	width: 240px;
+	margin: 10px;
 }
